@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".google_form.GoogleFormActivity">
+
+    <include layout="@layout/app_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/project_summision"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_18sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/yellow" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:hint="@string/first_name"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:textColor="#000000"
+                    android:textColorHint="#938f8f" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:hint="@string/last_name"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:textColor="#000000"
+                    android:textColorHint="#938f8f" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmailAdress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginVertical="@dimen/_30sdp"
+                android:background="@drawable/rounded_border_edittext"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="@dimen/_8sdp"
+
+                android:textColor="#000000"
+                android:textColorHint="#938f8f" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etGithubProjectLink"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@drawable/rounded_border_edittext"
+                android:hint="@string/project_on_github_link"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:textColor="#000000"
+                android:textColorHint="#938f8f" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_submit"
+                style="@style/BigButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_14sdp"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:theme="@style/BigButtonStyle" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BigButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:shadowColor">#2607133C</item>
+        <item name="android:shadowDy">8</item>
+        <item name="android:shadowRadius">22</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="backgroundColor">@color/yellow</item>
+        <item name="backgroundTint">@color/yellow</item>
+        <item name="cornerRadius">@dimen/_4sdp</item>
+    </style>
+
+    <style name="Edit_Text">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/edit_texts</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="btn_style">
+        <item name="android:background">@drawable/buttons</item>
+    </style>
+</resources>
